@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Search Hub Status</title>
+<style>
+  body {
+    background-color: #000; /* Smooth black background */
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 40px;
+    transition: background-color 0.5s ease; /* Smooth transition for background if needed */
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    font-weight: bold;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 5s linear infinite;
+  }
+
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .service {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  .service:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .name {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .description {
+    margin-top: 8px;
+    font-size: 0.95em;
+  }
+  .status {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  .dot {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+  }
+  /* Colors can be changed easily by editing the classes below */
+  .red {
+    background-color: #f44336;
+  }
+  .green {
+    background-color: #4CAF50;
+  }
+</style>
+</head>
+<body>
+<h1>Search Hub Status</h1>
+
+<div class="service">
+  <div class="header">
+    <div class="name">Update Service</div>
+  </div>
+  <div class="description">We have shut this down for a temporary amount of time for work.</div>
+  <div class="status">
+    <div class="dot red"></div>
+    <div>Status: Down</div>
+  </div>
+</div>
+
+<div class="service">
+  <div class="header">
+    <div class="name">Apps And Websites</div>
+  </div>
+  <div class="description">We are currently aware of an issue where fern will say access denied for some users.</div>
+  <div class="status">
+    <div class="dot red"></div>
+    <div>Status: Down</div>
+  </div>
+</div>
+
+<div class="service">
+  <div class="header">
+    <div class="name">Social</div>
+  </div>
+  <div class="description"></div>
+  <div class="status">
+    <div class="dot green"></div>
+    <div>Status: Up</div>
+  </div>
+</div>
+
+<div class="service">
+  <div class="header">
+    <div class="name">Overall Website</div>
+  </div>
+  <div class="description"></div>
+  <div class="status">
+    <div class="dot green"></div>
+    <div>Status: Up</div>
+  </div>
+</div>
+
+</body>
+</html>
